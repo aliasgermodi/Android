@@ -17,8 +17,28 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Options"
-            android:label="@string/title_activity_options" >
+            android:name=".options"
+            android:label="@string/title_activity_options"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ali.rgb_amb.MainActivity" />
+        </activity>
+        <activity
+            android:name=".RGB"
+            android:label="@string/title_activity_rgb"
+            android:parentActivityName=".options" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ali.rgb_amb.options" />
+        </activity>
+        <activity
+            android:name=".AMB"
+            android:label="@string/title_activity_amb"
+            android:parentActivityName=".options" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ali.rgb_amb.options" />
         </activity>
     </application>
 

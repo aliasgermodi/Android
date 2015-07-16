@@ -40,6 +40,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.ali.rgb_amb.options" />
         </activity>
+        <activity
+            android:name=".control"
+            android:label="@string/title_activity_control"
+            android:parentActivityName=".options" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ali.rgb_amb.options" />
+        </activity>
     </application>
 
 </manifest>

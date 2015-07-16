@@ -6,4 +6,7 @@
     <string name="title_activity_options">Options</string>
     <string name="title_activity_rgb">RGB</string>
     <string name="title_activity_amb">AMB</string>
+    <string name="title_activity_control">control</string>
+
+    <string name="hello_world">Hello world!</string>
 </resources>

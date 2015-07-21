@@ -7,12 +7,96 @@
     tools:context="com.example.ali.rgb_amb.RGB">
 
 
-    <Button
+    <Switch
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button"
+        android:text="RED"
+        android:id="@+id/red"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="43dp"
+        android:buttonTint="#ffff0000"
+        android:backgroundTint="#ffff0000" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GREEN"
+        android:id="@+id/green"
+        android:layout_alignTop="@+id/red"
+        android:layout_centerHorizontal="true"
+        android:buttonTint="#ff00ff00" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BLUE"
+        android:id="@+id/blue"
+        android:layout_alignTop="@+id/green"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:buttonTint="#ff0000ff" />
+
+    <SeekBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekR"
+        android:layout_below="@+id/red"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="60dp"
+        android:progressBackgroundTint="#ffff0000"
+        android:progressTint="#ffff0000"
+        android:thumbTint="#ffff0000" />
+
+    <SeekBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekG"
+        android:layout_below="@+id/seekR"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="10dp"
+        android:thumbTint="#ff00ff00"
+        android:progressBackgroundTint="#ff00ff00"
+        android:progressTint="#ff00ff00" />
+
+    <SeekBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekB"
+        android:layout_below="@+id/seekG"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="10dp"
+        android:progressTint="#ff0000ff"
+        android:progressBackgroundTint="#ff0000ff"
+        android:thumbTint="#ff0000ff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RED"
+        android:id="@+id/textView"
+        android:layout_below="@+id/red"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="67dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GREEN"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="25dp"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BLUE"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/textView2"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="25dp"/>
+
 </RelativeLayout>

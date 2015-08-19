@@ -58,14 +58,20 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         Button openButton = (Button) findViewById(R.id.open);
-        Button forward = (Button) findViewById(R.id.forwardB);
-        Button backward = (Button) findViewById(R.id.backwardB);
-        Button left = (Button) findViewById(R.id.leftB);
-        Button right = (Button) findViewById(R.id.rightB);
-        Button on = (Button) findViewById(R.id.onB);
+        Button green = (Button) findViewById(R.id.greenB);
+        Button red = (Button) findViewById(R.id.redB);
+        Button blue = (Button) findViewById(R.id.blueB);
+        Button purple = (Button) findViewById(R.id.purpleB);
+        Button maroon = (Button) findViewById(R.id.maroonB);
+        Button v = (Button) findViewById(R.id.vB);
+        Button yellow = (Button) findViewById(R.id.yellowB);
+        Button white = (Button) findViewById(R.id.whiteB);
+        Button dgreen = (Button) findViewById(R.id.dgreenB);
+        Button lb = (Button) findViewById(R.id.lbB);
+        Button db = (Button) findViewById(R.id.dbB);
+        Button orange = (Button) findViewById(R.id.orangeB);
+        Button rainbow = (Button) findViewById(R.id.rainB);
         Button off = (Button) findViewById(R.id.offB);
-        Button lift = (Button) findViewById(R.id.liftB);
-        Button low = (Button) findViewById(R.id.lowB);
         Button Close = (Button) findViewById(R.id.close);
 
         myLabel = (TextView) findViewById(R.id.label);
@@ -88,14 +94,14 @@ public class MainActivity extends Activity {
 
 
         //Just buttons that send the message to the Arduino and run which motor that the message is associated with
-        forward.setOnTouchListener(new View.OnTouchListener() {
+        green.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
 
                 if (event.getAction() == MotionEvent.ACTION_DOWN) {
 
                     try {
-                        forwardButton();
+                        greenButton();
                     } catch (IOException ex) {
                     }
                 } else if (event.getAction() == MotionEvent.ACTION_UP) {
@@ -110,39 +116,37 @@ public class MainActivity extends Activity {
             //return false;
         });
 
-        backward.setOnTouchListener(new View.OnTouchListener() {
-                                        @Override
-                                        public boolean onTouch(View v, MotionEvent event) {
+        red.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
 
-                                            if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                if (event.getAction() == MotionEvent.ACTION_DOWN) {
 
-                                                try {
-                                                    backwardButton();
-                                                } catch (IOException ex) {
-                                                }
-                                            } else if (event.getAction() == MotionEvent.ACTION_UP) {
+                    try {
+                        redButton();
+                    } catch (IOException ex) {
+                    }
+                } else if (event.getAction() == MotionEvent.ACTION_UP) {
 
-                                                try {
-                                                    stopMotor();
-                                                } catch (IOException ex) {
-                                                }
-                                            }
+                    try {
+                        stopMotor();
+                    } catch (IOException ex) {
+                    }
+                }
 
-                                            return false;
-                                        }
-                                        //return false;
-                                    }
+                return false;
+            }
+            //return false;
+        });
 
-        );
-
-        left.setOnTouchListener(new View.OnTouchListener() {
+        blue.setOnTouchListener(new View.OnTouchListener() {
                                     @Override
                                     public boolean onTouch(View v, MotionEvent event) {
 
                                         if (event.getAction() == MotionEvent.ACTION_DOWN) {
 
                                             try {
-                                                leftButton();
+                                                blueButton();
                                             } catch (IOException ex) {
                                             }
                                         } else if (event.getAction() == MotionEvent.ACTION_UP) {
@@ -159,122 +163,260 @@ public class MainActivity extends Activity {
 
         );
 
-        right.setOnTouchListener(new View.OnTouchListener() {
+        purple.setOnTouchListener(new View.OnTouchListener() {
+                                      @Override
+                                      public boolean onTouch(View v, MotionEvent event) {
+
+                                          if (event.getAction() == MotionEvent.ACTION_DOWN) {
+
+                                              try {
+                                                  purpleButton();
+                                              } catch (IOException ex) {
+                                              }
+                                          } else if (event.getAction() == MotionEvent.ACTION_UP) {
+
+                                              try {
+                                                  stopMotor();
+                                              } catch (IOException ex) {
+                                              }
+                                          }
+                                          return false;
+                                      }
+                                      //return false;
+                                  }
+
+
+        );
+
+
+        maroon.setOnTouchListener(new View.OnTouchListener() {
+                                      @Override
+                                      public boolean onTouch(View v, MotionEvent event) {
+
+                                          if (event.getAction() == MotionEvent.ACTION_DOWN) {
+
+                                              try {
+                                                  maroonButton();
+                                              } catch (IOException ex) {
+                                              }
+                                          } /*else if (event.getAction() == MotionEvent.ACTION_UP) {
+
+					try {
+						stopMotor();
+					} catch (IOException ex) {
+					}*/
+                                          return false;
+                                      }
+                                      //return false;
+                                  }
+
+
+        );
+
+        v.setOnTouchListener(new View.OnTouchListener() {
+                                 @Override
+                                 public boolean onTouch(View v, MotionEvent event) {
+
+                                     if (event.getAction() == MotionEvent.ACTION_DOWN) {
+
+                                         try {
+                                             vButton();
+                                         } catch (IOException ex) {
+                                         }
+                                     }/* else if (event.getAction() == MotionEvent.ACTION_UP) {
+
+					try {
+						stopMotor();
+					} catch (IOException ex) {
+					}*/
+                                     return false;
+                                 }
+                                 //return false;
+                             }
+
+        );
+
+        yellow.setOnTouchListener(new View.OnTouchListener() {
+                                      @Override
+                                      public boolean onTouch(View v, MotionEvent event) {
+
+                                          if (event.getAction() == MotionEvent.ACTION_DOWN) {
+
+                                              try {
+                                                  yellowButton();
+                                              } catch (IOException ex) {
+                                              }
+                                          } /*else if (event.getAction() == MotionEvent.ACTION_UP) {
+
+					try {
+						stopMotor();
+					} catch (IOException ex) {
+					}*/
+                                          return false;
+                                      }
+                                      //return false;
+                                  }
+
+        );
+
+        white.setOnTouchListener(new View.OnTouchListener() {
                                      @Override
                                      public boolean onTouch(View v, MotionEvent event) {
 
                                          if (event.getAction() == MotionEvent.ACTION_DOWN) {
 
                                              try {
-                                                 rightButton();
+                                                 whiteButton();
                                              } catch (IOException ex) {
                                              }
-                                         } else if (event.getAction() == MotionEvent.ACTION_UP) {
+                                         } /*else if (event.getAction() == MotionEvent.ACTION_UP) {
 
-                                             try {
-                                                 stopMotor();
-                                             } catch (IOException ex) {
-                                             }
-                                         }
+					try {
+						stopMotor();
+					} catch (IOException ex) {
+					}*/
                                          return false;
                                      }
                                      //return false;
                                  }
 
-
         );
 
+        dgreen.setOnTouchListener(new View.OnTouchListener() {
+                                      @Override
+                                      public boolean onTouch(View v, MotionEvent event) {
 
-        on.setOnTouchListener(new View.OnTouchListener() {
-                                  @Override
-                                  public boolean onTouch(View v, MotionEvent event) {
+                                          if (event.getAction() == MotionEvent.ACTION_DOWN) {
 
-                                      if (event.getAction() == MotionEvent.ACTION_DOWN) {
-
-                                          try {
-                                              onButton();
-                                          } catch (IOException ex) {
-                                          }
-                                      } /*else if (event.getAction() == MotionEvent.ACTION_UP) {
+                                              try {
+                                                  dgreenButton();
+                                              } catch (IOException ex) {
+                                              }
+                                          } /*else if (event.getAction() == MotionEvent.ACTION_UP) {
 
 					try {
 						stopMotor();
 					} catch (IOException ex) {
 					}*/
-                                      return false;
+                                          return false;
+                                      }
+                                      //return false;
                                   }
-                                  //return false;
-                              }
 
+        );
+
+        lb.setOnTouchListener(new View.OnTouchListener() {
+                                      @Override
+                                      public boolean onTouch(View v, MotionEvent event) {
+
+                                          if (event.getAction() == MotionEvent.ACTION_DOWN) {
+
+                                              try {
+                                                  lbButton();
+                                              } catch (IOException ex) {
+                                              }
+                                          } /*else if (event.getAction() == MotionEvent.ACTION_UP) {
+
+					try {
+						stopMotor();
+					} catch (IOException ex) {
+					}*/
+                                          return false;
+                                      }
+                                      //return false;
+                                  }
+
+        );
+
+        db.setOnTouchListener(new View.OnTouchListener() {
+                                      @Override
+                                      public boolean onTouch(View v, MotionEvent event) {
+
+                                          if (event.getAction() == MotionEvent.ACTION_DOWN) {
+
+                                              try {
+                                                  dbButton();
+                                              } catch (IOException ex) {
+                                              }
+                                          } /*else if (event.getAction() == MotionEvent.ACTION_UP) {
+
+					try {
+						stopMotor();
+					} catch (IOException ex) {
+					}*/
+                                          return false;
+                                      }
+                                      //return false;
+                                  }
+
+        );
+
+        orange.setOnTouchListener(new View.OnTouchListener() {
+                                      @Override
+                                      public boolean onTouch(View v, MotionEvent event) {
+
+                                          if (event.getAction() == MotionEvent.ACTION_DOWN) {
+
+                                              try {
+                                                  orangeButton();
+                                              } catch (IOException ex) {
+                                              }
+                                          } /*else if (event.getAction() == MotionEvent.ACTION_UP) {
+
+					try {
+						stopMotor();
+					} catch (IOException ex) {
+					}*/
+                                          return false;
+                                      }
+                                      //return false;
+                                  }
+
+        );
+
+        rainbow.setOnTouchListener(new View.OnTouchListener() {
+                                      @Override
+                                      public boolean onTouch(View v, MotionEvent event) {
+
+                                          if (event.getAction() == MotionEvent.ACTION_DOWN) {
+
+                                              try {
+                                                  rainButton();
+                                              } catch (IOException ex) {
+                                              }
+                                          } /*else if (event.getAction() == MotionEvent.ACTION_UP) {
+
+					try {
+						stopMotor();
+					} catch (IOException ex) {
+					}*/
+                                          return false;
+                                      }
+                                      //return false;
+                                  }
 
         );
 
         off.setOnTouchListener(new View.OnTouchListener() {
-                                   @Override
-                                   public boolean onTouch(View v, MotionEvent event) {
+                                       @Override
+                                       public boolean onTouch(View v, MotionEvent event) {
 
-                                       if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                                           if (event.getAction() == MotionEvent.ACTION_DOWN) {
 
-                                           try {
-                                               offButton();
-                                           } catch (IOException ex) {
-                                           }
-                                       }/* else if (event.getAction() == MotionEvent.ACTION_UP) {
+                                               try {
+                                                   offButton();
+                                               } catch (IOException ex) {
+                                               }
+                                           } /*else if (event.getAction() == MotionEvent.ACTION_UP) {
 
 					try {
 						stopMotor();
 					} catch (IOException ex) {
 					}*/
-                                       return false;
+                                           return false;
+                                       }
+                                       //return false;
                                    }
-                                   //return false;
-                               }
-
-        );
-
-        lift.setOnTouchListener(new View.OnTouchListener() {
-                                    @Override
-                                    public boolean onTouch(View v, MotionEvent event) {
-
-                                        if (event.getAction() == MotionEvent.ACTION_DOWN) {
-
-                                            try {
-                                                liftButton();
-                                            } catch (IOException ex) {
-                                            }
-                                        } /*else if (event.getAction() == MotionEvent.ACTION_UP) {
-
-					try {
-						stopMotor();
-					} catch (IOException ex) {
-					}*/
-                                        return false;
-                                    }
-                                    //return false;
-                                }
-
-        );
-
-        low.setOnTouchListener(new View.OnTouchListener() {
-                                   @Override
-                                   public boolean onTouch(View v, MotionEvent event) {
-
-                                       if (event.getAction() == MotionEvent.ACTION_DOWN) {
-
-                                           try {
-                                               lowButton();
-                                           } catch (IOException ex) {
-                                           }
-                                       } /*else if (event.getAction() == MotionEvent.ACTION_UP) {
-
-					try {
-						stopMotor();
-					} catch (IOException ex) {
-					}*/
-                                       return false;
-                                   }
-                                   //return false;
-                               }
 
         );
 
@@ -330,36 +472,36 @@ public class MainActivity extends Activity {
         myLabel.setText("Bluetooth Connected");
     }
 
-    void forwardButton() throws IOException {
-        String msg = "f";
-        msg += "\n";
-        outStream.write(msg.getBytes());
-        myLabel.setText("Data Sent");
-    }
-
-    void backwardButton() throws IOException {
-        String msg = "b";
-        msg += "\n";
-        outStream.write(msg.getBytes());
-        myLabel.setText("Data Sent");
-    }
-
-    void rightButton() throws IOException {
+    void redButton() throws IOException {
         String msg = "r";
         msg += "\n";
         outStream.write(msg.getBytes());
         myLabel.setText("Data Sent");
     }
 
-    void leftButton() throws IOException {
-        String msg = "l";
+    void greenButton() throws IOException {
+        String msg = "g";
         msg += "\n";
         outStream.write(msg.getBytes());
         myLabel.setText("Data Sent");
     }
 
-    void onButton() throws IOException {
-        String msg = "o";
+    void blueButton() throws IOException {
+        String msg = "b";
+        msg += "\n";
+        outStream.write(msg.getBytes());
+        myLabel.setText("Data Sent");
+    }
+
+    void purpleButton() throws IOException {
+        String msg = "p";
+        msg += "\n";
+        outStream.write(msg.getBytes());
+        myLabel.setText("Data Sent");
+    }
+
+    void maroonButton() throws IOException {
+        String msg = "m";
         msg += "\n";
         outStream.write(msg.getBytes());
         myLabel.setText("Data Sent");
@@ -372,19 +514,62 @@ public class MainActivity extends Activity {
         myLabel.setText("Data Sent");
     }
 
-    void liftButton() throws IOException {
-        String msg = "t";
+    void vButton() throws IOException {
+        String msg = "v";
         msg += "\n";
         outStream.write(msg.getBytes());
         myLabel.setText("Data Sent");
     }
 
-    void lowButton() throws IOException {
+    void whiteButton() throws IOException {
         String msg = "w";
         msg += "\n";
         outStream.write(msg.getBytes());
         myLabel.setText("Data Sent");
     }
+
+    void yellowButton() throws IOException {
+        String msg = "y";
+        msg += "\n";
+        outStream.write(msg.getBytes());
+        myLabel.setText("Data Sent");
+    }
+
+    void dgreenButton() throws IOException {
+        String msg = "d";
+        msg += "\n";
+        outStream.write(msg.getBytes());
+        myLabel.setText("Data Sent");
+    }
+
+    void lbButton() throws IOException {
+        String msg = "l";
+        msg += "\n";
+        outStream.write(msg.getBytes());
+        myLabel.setText("Data Sent");
+    }
+
+    void dbButton() throws IOException {
+        String msg = "z";
+        msg += "\n";
+        outStream.write(msg.getBytes());
+        myLabel.setText("Data Sent");
+    }
+
+    void orangeButton() throws IOException {
+        String msg = "o";
+        msg += "\n";
+        outStream.write(msg.getBytes());
+        myLabel.setText("Data Sent");
+    }
+
+    void rainButton() throws IOException {
+        String msg = "a";
+        msg += "\n";
+        outStream.write(msg.getBytes());
+        myLabel.setText("Data Sent");
+    }
+
 
     void stopMotor() throws IOException {
         String msg = "s";

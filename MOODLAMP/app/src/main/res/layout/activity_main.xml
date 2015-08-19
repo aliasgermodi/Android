@@ -9,6 +9,8 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
 
+
+
     <TextView
         android:id="@+id/label"
         android:layout_width="wrap_content"
@@ -17,60 +19,122 @@
         android:layout_y="0dp" />
 
     <Button
-        android:id="@+id/forwardB"
-        android:layout_width="95dp"
-        android:layout_height="45dp"
-        android:layout_x="250dp"
-        android:layout_y="0dp"
-        android:text="forward" />
-
-    <Button
-        android:id="@+id/leftB"
-        android:layout_width="95dp"
-        android:layout_height="45dp"
-        android:layout_x="137dp"
-        android:layout_y="50dp"
-        android:text="left" />
-
-    <Button
-        android:id="@+id/rightB"
-        android:layout_width="95dp"
-        android:layout_height="45dp"
-        android:layout_x="362dp"
-        android:layout_y="50dp"
-        android:text="right" />
-
-    <Button
-        android:id="@+id/backwardB"
+        android:id="@+id/redB"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_x="250dp"
-        android:layout_y="100dp"
-        android:text="backward" />
+        android:layout_height="45dp"
+        android:layout_x="0dp"
+        android:layout_y="60dp"
+        android:text="RED"
+        android:backgroundTint="#ff0000" />
 
     <Button
-        android:id="@+id/lowB"
+        android:id="@+id/greenB"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_x="100dp"
+        android:layout_y="60dp"
+        android:text="GREEN"
+        android:backgroundTint="#00ff00" />
+
+    <Button
+        android:id="@+id/blueB"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_x="200dp"
+        android:layout_y="60dp"
+        android:text="BLUE"
+        android:backgroundTint="#0000ff" />
+
+    <Button
+        android:id="@+id/purpleB"
         android:layout_width="70dp"
-        android:layout_height="45dp"
-        android:layout_x="370dp"
+        android:layout_height="70dp"
+        android:layout_x="0dp"
         android:layout_y="150dp"
-        android:text="low" />
+        android:backgroundTint="#ff00ff" />
 
     <Button
-        android:id="@+id/onB"
-        android:layout_width="50dp"
-        android:layout_height="45dp"
-        android:layout_x="160dp"
-        android:layout_y="100dp"
-        android:text="on" />
+        android:id="@+id/yellowB"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_x="0dp"
+        android:layout_y="220dp"
+        android:backgroundTint="#ffff00" />
+
+    <Button
+        android:id="@+id/lbB"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_x="0dp"
+        android:layout_y="290dp"
+        android:backgroundTint="#66ffff" />
+
+    <Button
+        android:id="@+id/maroonB"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_x="100dp"
+        android:layout_y="150dp"
+        android:backgroundTint="#ff3333" />
+
+    <Button
+        android:id="@+id/dbB"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_x="100dp"
+        android:layout_y="290dp"
+        android:backgroundTint="#000099" />
+
+    <Button
+        android:id="@+id/vB"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_x="200dp"
+        android:layout_y="150dp"
+        android:backgroundTint="#b266ff" />
+
+    <Button
+        android:id="@+id/dgreenB"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_x="200dp"
+        android:layout_y="220dp"
+        android:backgroundTint="#006600" />
+
+        <Button
+        android:id="@+id/orangeB"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_x="200dp"
+        android:layout_y="290dp"
+        android:backgroundTint="#ff8000" />
+
+    <Button
+        android:id="@+id/whiteB"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_x="100dp"
+        android:layout_y="220dp"
+        android:backgroundTint="#ffffff" />
+
+    <Button
+        android:id="@+id/rainB"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="0dp"
+        android:layout_y="370dp"
+        android:text="rainbow"
+        android:backgroundTint="#ff7cd6" />
 
     <Button
         android:id="@+id/offB"
-        android:layout_width="50dp"
-        android:layout_height="45dp"
-        android:layout_x="160dp"
-        android:layout_y="150dp"
-        android:text="off" />
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="0dp"
+        android:layout_y="420dp"
+        android:text="off"
+         />
+
 
     <Button
         android:id="@+id/liftB"
@@ -82,29 +146,31 @@
 
     <Button
         android:id="@+id/close"
-        android:layout_width="40dp"
+        android:layout_width="70dp"
         android:layout_height="40dp"
-        android:layout_x="0dp"
-        android:layout_y="174dp"
-        android:text="X" />
+        android:layout_x="220dp"
+        android:layout_y="0dp"
+        android:text="exit" />
 
     <Button
         android:id="@+id/open"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_x="0dp"
-        android:layout_y="92dp"
-        android:text="C" />
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_x="100dp"
+        android:layout_y="0dp"
+        android:text="CONNECT" />
 
     <EditText
         android:id="@+id/deviceName"
         android:layout_width="100dp"
         android:layout_height="40dp"
         android:layout_x="0dp"
-        android:layout_y="40dp"
+        android:layout_y="0dp"
         android:ems="10" >
 
-        <requestFocus />
+
+
+    <requestFocus />
     </EditText>
 
 </AbsoluteLayout>

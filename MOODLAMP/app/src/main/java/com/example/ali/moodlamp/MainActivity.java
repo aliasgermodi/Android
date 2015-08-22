@@ -104,12 +104,6 @@ public class MainActivity extends Activity {
                         greenButton();
                     } catch (IOException ex) {
                     }
-                } else if (event.getAction() == MotionEvent.ACTION_UP) {
-
-                    try {
-                        stopMotor();
-                    } catch (IOException ex) {
-                    }
                 }
                 return false;
             }
@@ -124,12 +118,6 @@ public class MainActivity extends Activity {
 
                     try {
                         redButton();
-                    } catch (IOException ex) {
-                    }
-                } else if (event.getAction() == MotionEvent.ACTION_UP) {
-
-                    try {
-                        stopMotor();
                     } catch (IOException ex) {
                     }
                 }
@@ -149,12 +137,6 @@ public class MainActivity extends Activity {
                                                 blueButton();
                                             } catch (IOException ex) {
                                             }
-                                        } else if (event.getAction() == MotionEvent.ACTION_UP) {
-
-                                            try {
-                                                stopMotor();
-                                            } catch (IOException ex) {
-                                            }
                                         }
                                         return false;
                                     }
@@ -171,12 +153,6 @@ public class MainActivity extends Activity {
 
                                               try {
                                                   purpleButton();
-                                              } catch (IOException ex) {
-                                              }
-                                          } else if (event.getAction() == MotionEvent.ACTION_UP) {
-
-                                              try {
-                                                  stopMotor();
                                               } catch (IOException ex) {
                                               }
                                           }
@@ -571,12 +547,7 @@ public class MainActivity extends Activity {
     }
 
 
-    void stopMotor() throws IOException {
-        String msg = "s";
-        msg += "\n";
-        outStream.write(msg.getBytes());
-        myLabel.setText("Data Sent");
-    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

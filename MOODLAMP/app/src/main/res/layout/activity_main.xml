@@ -23,27 +23,27 @@
         android:layout_width="wrap_content"
         android:layout_height="45dp"
         android:layout_x="0dp"
-        android:layout_y="60dp"
+        android:layout_y="80dp"
         android:text="RED"
-        android:backgroundTint="#ff0000" />
+        android:background="#ff0000" />
 
     <Button
         android:id="@+id/greenB"
         android:layout_width="wrap_content"
         android:layout_height="45dp"
         android:layout_x="100dp"
-        android:layout_y="60dp"
+        android:layout_y="80dp"
         android:text="GREEN"
-        android:backgroundTint="#00ff00" />
+        android:background="#00ff00" />
 
     <Button
         android:id="@+id/blueB"
         android:layout_width="wrap_content"
         android:layout_height="45dp"
         android:layout_x="200dp"
-        android:layout_y="60dp"
+        android:layout_y="80dp"
         android:text="BLUE"
-        android:backgroundTint="#0000ff" />
+        android:background="#0000ff" />
 
     <Button
         android:id="@+id/purpleB"
@@ -51,7 +51,7 @@
         android:layout_height="70dp"
         android:layout_x="0dp"
         android:layout_y="150dp"
-        android:backgroundTint="#ff00ff" />
+        android:background="#ff00ff" />
 
     <Button
         android:id="@+id/yellowB"
@@ -59,7 +59,7 @@
         android:layout_height="70dp"
         android:layout_x="0dp"
         android:layout_y="220dp"
-        android:backgroundTint="#ffff00" />
+        android:background="#ffff00" />
 
     <Button
         android:id="@+id/lbB"
@@ -67,7 +67,7 @@
         android:layout_height="70dp"
         android:layout_x="0dp"
         android:layout_y="290dp"
-        android:backgroundTint="#66ffff" />
+        android:background="#66ffff" />
 
     <Button
         android:id="@+id/maroonB"
@@ -75,7 +75,7 @@
         android:layout_height="70dp"
         android:layout_x="100dp"
         android:layout_y="150dp"
-        android:backgroundTint="#ff3333" />
+        android:background="#ff3333" />
 
     <Button
         android:id="@+id/dbB"
@@ -83,7 +83,7 @@
         android:layout_height="70dp"
         android:layout_x="100dp"
         android:layout_y="290dp"
-        android:backgroundTint="#000099" />
+        android:background="#000099" />
 
     <Button
         android:id="@+id/vB"
@@ -91,7 +91,7 @@
         android:layout_height="70dp"
         android:layout_x="200dp"
         android:layout_y="150dp"
-        android:backgroundTint="#b266ff" />
+        android:background="#b266ff" />
 
     <Button
         android:id="@+id/dgreenB"
@@ -99,7 +99,7 @@
         android:layout_height="70dp"
         android:layout_x="200dp"
         android:layout_y="220dp"
-        android:backgroundTint="#006600" />
+        android:background="#006600" />
 
         <Button
         android:id="@+id/orangeB"
@@ -107,7 +107,7 @@
         android:layout_height="70dp"
         android:layout_x="200dp"
         android:layout_y="290dp"
-        android:backgroundTint="#ff8000" />
+        android:background="#ff8000" />
 
     <Button
         android:id="@+id/whiteB"
@@ -115,7 +115,7 @@
         android:layout_height="70dp"
         android:layout_x="100dp"
         android:layout_y="220dp"
-        android:backgroundTint="#ffffff" />
+        android:background="#ffffff" />
 
     <Button
         android:id="@+id/rainB"
@@ -124,7 +124,7 @@
         android:layout_x="0dp"
         android:layout_y="370dp"
         android:text="rainbow"
-        android:backgroundTint="#ff7cd6" />
+        android:background="#ff7cd6" />
 
     <Button
         android:id="@+id/offB"
@@ -134,15 +134,6 @@
         android:layout_y="420dp"
         android:text="off"
          />
-
-
-    <Button
-        android:id="@+id/liftB"
-        android:layout_width="70dp"
-        android:layout_height="45dp"
-        android:layout_x="370dp"
-        android:layout_y="100dp"
-        android:text="lift" />
 
     <Button
         android:id="@+id/close"
